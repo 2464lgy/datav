@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Array entries()
+    </h1>
+    <p>
+        从数组中创建一个可迭代的对象。
+    </p>
+    <p id="demo1">
+
+    </p>
+    <p id="demo2">
+
+    </p>
+    <p id="demo3">
+
+    </p>
+    <p id="demo4">
+
+    </p>
+    <p><strong>注意：</strong>IE11及其更早的浏览器不支持entries方法</p>
+    <script>
+        var fruites=["Banana","Orange","Apple","Mango"];
+        var x=fruites.entries();
+       // x.next();
+        document.getElementById('demo1').innerHTML=x.next().value;
+        document.getElementById('demo2').innerHTML=x.next().value;
+        document.getElementById('demo3').innerHTML=x.next().value;
+        document.getElementById('demo4').innerHTML=x.next().value;
+    </script>
+</body>
+</html>
