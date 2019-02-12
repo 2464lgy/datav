@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="numbers.forEach(myFunction)">点我</button>
+    <p id="demo"></p>
+    <script>
+        var demoP=document.getElementById('demo');
+        var numbers=[4,9,16,25];
+        function myFunction(item,index){
+            demoP.innerHTML=demoP.innerHTML+"index["+index+"]："+item+"<br>";
+        }
+    </script>
+</body>
+</html>

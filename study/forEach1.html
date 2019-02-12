@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="numbers.forEach(myFunction)">点我</button>
+    <p>数组元素总和：<span id="demo"></span></p>
+    <script>
+        var demo=document.getElementById('demo');
+        var sum=0;
+        var numbers=[65,44,12,4];
+        function myFunction(item,index){
+            sum+=item;
+            demo.innerHTML=sum;
+        }
+
+    </script>
+</body>
+</html>

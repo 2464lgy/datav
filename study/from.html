@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myArr=Array.from('RUNOOB');
+        console.log(myArr);
+        var setObj=new Set(['1','a','b','c']);
+        var objArr=Array.from(setObj);
+        console.log(objArr);
+        var arr=Array.from([1,2,3],x=>x*10);
+        console.log(arr);
+        var obj=[{'age':1,'name':'ssj'},23];//这里若是{'age':1,'name':'ssj'}得到的数组为[]
+        console.log(Array.from(obj));
+    </script>
+</body>
+</html>
